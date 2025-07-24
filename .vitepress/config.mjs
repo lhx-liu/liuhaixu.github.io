@@ -6,7 +6,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "刘海旭",
   description: "组件、学习笔记与项目踩坑记录",
-  base: '/lhx-liu/',
+  base: '/liuhaixu.github.io/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
