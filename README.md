@@ -27,7 +27,7 @@
 2. 在`experiences/`目录添加Markdown文件  
 3. 提交PR并描述经验场景  
 
-> 所有内容遵循 [CC BY-NC-SA 4.0](LICENSE) 许可
+> 所有内容遵循 [MIT License] 许可
 
 ---
 
