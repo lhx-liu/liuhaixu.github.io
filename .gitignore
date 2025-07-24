@@ -1,0 +1,9 @@
+# 忽略特定文件夹
+folder-name/
+
+# 或者使用通配符忽略多种文件夹
+node_modules
+*/dist/
+
+.vitepress/cache
+.vitepress/dist
