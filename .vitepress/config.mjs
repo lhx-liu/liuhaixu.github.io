@@ -1,3 +1,5 @@
+process.env.VITE_EXTRA_EXTENSIONS = 'crx'
+
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
