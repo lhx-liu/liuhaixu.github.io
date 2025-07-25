@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "welcome !"
   text: "编程学习之旅"
-  tagline: react vue uniapp
+  tagline: 欢迎交流
   actions:
     - theme: brand
       text: 组件
