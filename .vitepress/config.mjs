@@ -1,40 +1,38 @@
 process.env.VITE_EXTRA_EXTENSIONS = 'crx'
 
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
+import { withSidebar } from 'vitepress-sidebar';
+
+
+// 自动生成侧边栏
+const vitePressSidebarOptions = {
+  // VitePress Sidebar's options here...
+  documentRootPath: '/',
+  collapsed: false,
+  capitalizeFirst: true,
+  excludeByGlobPattern: ["README.md"]
+};
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  title: "刘海旭",
-  description: "组件、学习笔记与项目踩坑记录",
-  base: '/liuhaixu.github.io/',
+export default defineConfig(
+  withSidebar({
+  logo: '',
+  lastUpdated: true,
+  title: "编程学习之旅",
+  description: "编程学习之旅",
+  base: '/liuhaixu.github.io/', // 部署到github时  需要增加这个base 否则样式无法解决
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: '组件', link: '/components' }
     ],
+    // 支持搜索
+    search: {
+      provider: 'local'
+    },
 
-    sidebar: [
-      {
-        text: '组件',
-        link: '/components/index',
-        items: [
-          { text: 'phone-login', link: '/components/phone-login' },
-          { text: 'unv-calendar', link: '/components/unv-calendar' },
-          { text: 'unv-progress', link: '/components/unv-progress' }
-        ]
-      },
-      {
-        text: '学习',
-        link: '/learn/index',
-        items: [
-          { text: 'umijs', link: '/learn/umijs学习小结' },
-          { text: 'webpack插件之html-webpack-plugin', link: '/learn/webpack插件之html-webpack-plugin' },
-          { text: 'webpack插件之mini-css-extract-plugin', link: '/learn/webpack插件之mini-css-extract-plugin' },
-          { text: 'webpack构建React、TSX项目（一）', link: '/learn/webpack构建React、TSX项目（一）' }
-        ]
-      }
-    ],
+    sidebar: [],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/lhx-liu' }
@@ -55,6 +53,7 @@ export default defineConfig({
 
     // 菜单  Menu
     sidebarMenuLabel: "菜单",
+    
   },
 
   //设置为中文，相当于html标签加lang="zh-CN"
@@ -65,4 +64,4 @@ export default defineConfig({
       lang: "zh-CN",
     },
   },
-})
+}, vitePressSidebarOptions))
