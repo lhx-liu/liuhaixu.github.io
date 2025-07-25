@@ -28,7 +28,10 @@ export default defineConfig({
         text: '学习',
         link: '/learn/index',
         items: [
-          { text: 'umijs', link: '/learn/umijs学习小结' }
+          { text: 'umijs', link: '/learn/umijs学习小结' },
+          { text: 'webpack插件之html-webpack-plugin', link: '/learn/webpack插件之html-webpack-plugin' },
+          { text: 'webpack插件之mini-css-extract-plugin', link: '/learn/webpack插件之mini-css-extract-plugin' },
+          { text: 'webpack构建React、TSX项目（一）', link: '/learn/webpack构建React、TSX项目（一）' }
         ]
       }
     ],

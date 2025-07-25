@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "welcome !"
-  text: "学习笔记与项目踩坑记录"
+  text: "编程学习之旅"
   tagline: react vue uniapp
   actions:
     - theme: brand
@@ -15,11 +15,15 @@ hero:
       link: /learn/index
 
 features:
-  - title: 组件库
-    details: 封装了丰富的 uniapp 组件，包括日历、进度条、登录组件等
-  - title: 学习笔记
-    details: 记录 React、Vue、uniapp 等前端技术的学习过程和要点
-  - title: 项目经验
-    details: 总结项目开发中遇到的问题和解决方案，避免踩坑
----
+  - title: 🎯 技术播客
+    link: https://github.com/lhx-liu/liuhaixu.github.io
+    details: 使用vitepress搭建的个人博客页面，主要记录学习笔记、项目经验
+  - title: 🚀 开源项目：joker博客-后端服务
+    link: https://github.com/lhx-liu/joker-blog-koa
+    details: 使用koa2 + mysql + sequelize搭建的博客后台服务
+  - title: 💻 开源项目：joker博客-前台
+    link: https://github.com/lhx-liu/joker-blog-web
+    details: 使用vue3 + element-ui-plus + vite搭建的博客前台项目
 
+
+---
