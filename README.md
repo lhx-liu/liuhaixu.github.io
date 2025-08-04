@@ -2,6 +2,12 @@
 
 > 记录技术成长路上的经验总结与避坑指南，持续更新中
 
+## 项目地址 🌐
+
+[![在线访问](https://img.shields.io/badge/在线访问-学习笔记-green?style=for-the-badge&logo=github)](https://lhx-liu.github.io/liuhaixu.github.io/)
+
+或者直接访问: [https://lhx-liu.github.io/liuhaixu.github.io/](https://lhx-liu.github.io/liuhaixu.github.io/)
+
 ---
 
 ### 前端专项
