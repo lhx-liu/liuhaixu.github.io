@@ -39,7 +39,7 @@ export default defineConfig(
     ],
     //头上角要主题切换的文字 Appearance
     lightModeSwitchTitle: "切换主题",
-    lightModeSwitchTitle: "切换主题",
+    darkModeSwitchTitle: "切换主题",
     // 文章翻页
     docFooter: {
       prev: "上一篇", //Next page
