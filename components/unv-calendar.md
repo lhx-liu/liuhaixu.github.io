@@ -1,7 +1,7 @@
 # UNV Calendar 日历组件
 
 <p align="center">
-  <img src="./img/日历组件.jpg" alt="UNV Calendar 预览图" width="300">
+  <img src="./img/rili.jpg" alt="UNV Calendar 预览图" width="300">
 </p>
 
 ## 📝 组件介绍
