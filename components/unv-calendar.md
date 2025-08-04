@@ -177,7 +177,7 @@
 
 ## 👨‍💻 作者信息
 
-[https://github.com/lhx-liu](liuhaixu)
+[liuhaixu](https://github.com/lhx-liu)
 
 ### 版本信息
 ```bash

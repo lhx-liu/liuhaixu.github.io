@@ -86,7 +86,8 @@ vue2 vue3 支持
 
 ## 👨‍💻 作者信息
 
-[https://github.com/lhx-liu](liuhaixu)
+
+[liuhaixu](https://github.com/lhx-liu)
 
 ### 版本信息
 ```bash
