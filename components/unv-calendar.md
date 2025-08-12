@@ -8,11 +8,19 @@
 
 封装日历组件，可以在日历上进行预约或签到。
 
+### 📄 更新日志
+```bash
+更新 1.1.0版本
+更新内容：
+1.增加支持日历月份前后切换，不再只展示当前月份和下个月
+2.增加支持限制最小月份 最大月份，默认不限制
+```
+
 ### 🌟 组件特性
 
 1. 一款自定义封装的日历组件
-2. 可以用于门票预约、签到等场景
-3. 目前最多只放开当前月份和下一个月的日期，如果需要更多的日期，需要自己进行扩展
+2. 可以用于门票预约、打卡签到等场景
+3. 增加支持限制最小月份 最大月份，默认不限制
 
 ---
 
@@ -23,12 +31,6 @@
 
 ### 💻 组件源码
 [https://github.com/lhx-liu/lhx-components](https://github.com/lhx-liu/lhx-components)
-
-### 📄 更新日志
-```bash
-更新 1.0.0版本
-初始版本
-```
 
 ---
 
@@ -54,7 +56,7 @@
 
 ## 🎯 使用示例
 
-```javascript
+```vue
 <template>
 	<view class="test-box">
 		<view class="text">
@@ -62,11 +64,24 @@
 		</view>
 		<view class="text1">1、预约示例</view>
 		<view class="calendar-box">
-			<unv-calendar :selected="openDays1" @changeDay="changeDay" :monthCanChange="true"></unv-calendar>
+			<unv-calendar
+				:selected="openDays1"
+				@changeDay="changeDay"
+				:monthCanChange="true"
+				:minMonth="minMonth"
+				:maxMonth="maxMonth">
+			</unv-calendar>
 		</view>
 		<view class="text1">2、签到示例</view>
 		<view class="calendar-box">
-			<unv-calendar :selected="openDays2" :title="false" @changeDay="changeDay" :monthCanChange="true"></unv-calendar>
+			<unv-calendar
+				:selected="openDays2"
+				:title="false"
+				@changeDay="changeDay"
+				:monthCanChange="true"
+				:minMonth="minMonth"
+				:maxMonth="maxMonth">
+			</unv-calendar>
 		</view>
 	</view>
 </template>
@@ -75,52 +90,69 @@
 	export default {
 		data() {
 			return {
+				minMonth: '2025-07',
+				maxMonth: '2025-10',
 				openDays1: [
 					{
-						date: '2025-04-21',
+						date: '2025-08-18',
 						disable: true,
 						info: '已约完'
 					},
 					{
-						date: '2025-04-22',
+						date: '2025-08-19',
+						disable: true,
+						info: '已约完'
+					},
+					{
+						date: '2025-08-20',
+						disable: true,
+						info: '已约完'
+					},
+					{
+						date: '2025-08-21',
+						disable: true,
+						info: '已约完'
+					},
+					{
+						date: '2025-08-22',
 						disable: false,	
 						info: '可预约'
 					},
 					{
-						date: '2025-04-23',
+						date: '2025-08-23',
 						disable: false,	
 						info: '可预约'
 					},
 					{
-						date: '2025-04-24',
+						date: '2025-08-24',
 						disable: false,	
 						info: '可预约'
 					},
 					{
-						date: '2025-04-25',
+						date: '2025-08-25',
 						disable: true,	
 						info: '未开放'
 					},
 					{
-						date: '2025-04-26',
+						date: '2025-08-26',
 						disable: true,	
 						info: '未开放'
 					}
 				],
 				openDays2: [
 					{
-						date: '2025-04-19',
+						date: '2025-08-10',
 						showDot: true,
 						disable: true,
 						info: '已签到'
 					},
 					{
-						date: '2025-04-20',
+						date: '2025-08-11',
 						showDot: false,
 						info: '补签'
 					},
 					{
-						date: '2025-04-21',
+						date: '2025-08-12',
 						showDot: false,
 						info: '签到'
 					}
@@ -147,7 +179,10 @@
 |--------|------|--------|------|
 | selected | Array[dateObj] | [] | 打点数组，dateObj为日期对象 |
 | monthCanChange | Boolean | false | 是否可以切换月份 |
-| title | Boolean | true | 是否显示标题 |
+| title | Boolean Or String | true | 是否显示标题, 传入则按照传入内容显示标题 |
+| minMonth | String |  | 最小月份，格式：YYYY-MM |
+| maxMonth | String |  | 最大月份，格式：YYYY-MM |
+
 
 ### dateObj 说明
 
@@ -181,7 +216,7 @@
 
 ### 版本信息
 ```bash
-V1.0.0
+V1.1.0
 日历组件
 ```
 
