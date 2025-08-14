@@ -128,7 +128,7 @@ export default XyFlow;
 
 效果如下：
 
-![节点示例](image.png)
+![节点示例](./images/image.png)
 
 ### 2.5 引入连线
 
@@ -212,7 +212,7 @@ export default XyFlow;
 
 效果如下：
 
-![带连线的节点](image.png)
+![带连线的节点](./images/image-3.png)
 
 ### 2.6 手动添加节点和连线
 
