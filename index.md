@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: 学习笔记
       link: /learn/index
+    - theme: alt
+      text: 随手记
+      link: /随手记/index
 
 features:
   - title: 🎯 技术播客
